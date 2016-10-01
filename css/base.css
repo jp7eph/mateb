@@ -1,0 +1,165 @@
+﻿/*
+
+======================================================================
+Project Name    : mateb
+File Name       : base.css
+Encoding        : UTF-8
+Creation Date   : 2016-10-02
+ 
+Copyright (c) 2016 Naoki Horie.
+ 
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+======================================================================
+
+ */
+
+@charset "utf-8";
+
+
+/*-------------------------------*/
+/*           global              */
+/*-------------------------------*/
+
+html, body{
+/* html,bodyタグの設定 */
+    margin: 0;
+    /* 余白の削除 */
+    padding: 0;
+    /* 余白の削除 */
+    height: 100%;
+    /* 縦の高さを100% */
+    width: 100%;
+    /* 横の幅を100% */
+}
+
+div#container{
+    /*
+    background: url(./hoge.png);
+    ページ全体の背景設定．お好きにどうぞ
+    */
+    background-attachment: fixed;
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳ Ｐゴシック","MS PGothic","sans-serif";
+    position: relative;
+    /* フッターを位置指定するための基準設定を、まずフッターの親に書く*/
+    min-height: 100%;
+        /* 全部囲ってるdiv#containerは、”最低でも”高さ100%（＝ブラウザ画面めいっぱい）にしてね */
+        /* min-heightは最低限の高さを指定するプロパティ。コンテンツ量が増えれば、高さは伸びるよ */
+    height: auto !important;
+    /* IE6じゃmin-height使えないからIE6専用にこの行と次の行をこう書くよ */
+    height: 100%
+}
+
+p{
+    padding: 0px 0px 0px 2em;
+}
+
+h2{
+    clear:both;
+    font-size:128.6%;
+    line-height:114.3%;
+    color:#FFF;
+    font-weight:bold;
+    position: relative;
+    margin:0px 0px 20px;
+    padding:12px 15px 8px;
+    position:relative;
+    border:1px solid #42A5F5;
+    text-shadow:0 -1px 0 rgba(0,0,0,0.4);
+    background-color:#2196F3;
+}
+
+h3{
+    clear:both;
+    font-size:18px;
+    margin:30px 5px 10px 10px;
+    padding:2px 0px 0px 10px;
+    border-left:5px solid #1565C0;
+    color:#333;
+    background-color:#FFFFFF;
+    box-shadow:1px 1px 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+/*-------------------------------*/
+/*           header              */
+/*-------------------------------*/
+div#header{
+    margin-top: 5px;
+    border-style: none none solid none;
+    border-color: #1E88E5;
+}
+
+div#header div#inner{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #42A5F5;
+    font-size: xx-large;
+}
+
+/*-------------------------------*/
+/*           main                */
+/*-------------------------------*/
+div#main{
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom:70px; 
+    /* 高さ50pxのフッターだから、その分と余白分（+20px）空けてあげて */
+}
+
+/*-------------------------------*/
+/*             footer            */
+/*-------------------------------*/
+
+div#footer{
+    position: absolute;
+    /* フッターを絶対配置に指定する設定 */
+    bottom: 0;
+    /* フッターを一番下に置く*/
+    width: 100%;
+    height: 50px;
+    /* フッターの高さ */
+    text-align: center;
+    color:#FFFFFF;
+    background-color:#1E88E5;
+}
+    
+    
+/*-------------------------------*/
+/*           error_msg           */
+/*-------------------------------*/
+div.err{
+    font-size:large;
+    text-align:center;
+    background-color:#FFB5BA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding:5px 3%;
+    border-style: solid;
+    border-color: #FF3464;
+}
+
+/*-------------------------------*/
+/*            info_msg           */
+/*-------------------------------*/
+div.info{
+    font-size:large;
+    text-align:center;
+    background-color:#B5FFBA;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding:5px 3%;
+    border-style: solid;
+    border-color: #34FF64;
+}
