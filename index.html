@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 ======================================================================
 Project Name    : mateb
 File Name       : index.html
@@ -17,7 +17,8 @@ http://opensource.org/licenses/mit-license.php
 <head>
     <meta charset="utf-8">
     <title>title contents</title>
-    <link type="text/css" rel="stylesheet" href="css/base.css">
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <link type="text/css" rel="stylesheet" href="css/button.css" />
 </head>
 
 <body>
@@ -32,9 +33,6 @@ http://opensource.org/licenses/mit-license.php
 
 <div id="main">
 <h2>h2 contents</h2>
-    <p>
-        hoge
-    </p>
     <h3>h3 contents</h3>
     <p>
        hogehoge
@@ -45,6 +43,75 @@ http://opensource.org/licenses/mit-license.php
     <div class="err">
         error messages
     </div>
+
+    <h3>table item</h3>
+    <div style="display: table; margin-left: auto; margin-right: auto;">
+    <table>
+        <tr>
+            <td class="head">h_head1</td>
+            <td class="head">h_head2</td>
+            <td class="head">h_head3</td>
+            <td class="head">h_head4</td>
+        </tr>
+        <tr>
+            <td class="head">v_head1</td>
+            <td>hoge1</td>
+            <td>hoge2</td>
+            <td>hoge3</td>
+        </tr>
+        <tr>
+            <td class="head">v_head2</td>
+            <td>hoge1</td>
+            <td>hoge2</td>
+            <td>hoge3</td>
+        </tr>
+        <tr>
+            <td class="head">v_head3</td>
+            <td>hoge1</td>
+            <td>hoge2</td>
+            <td>hoge3</td>
+        </tr>
+    </table>
+    </div>
+
+    <h3>list item</h3>
+    <ul>
+        <li>ul item1</li>
+        <li>ul item2</li>
+        <li>ul item3</li>
+        <ul>
+            <li>ul item3-1</li>
+            <li>ul item3-2</li>
+            <li>ul item3-3</li>
+        </ul>
+    </ul>
+    <ol>
+        <li>ol item1</li>
+        <li>ol item2</li>
+        <li>ol item3</li>
+    </ol>
+
+<h2>button Demo</h2>
+    <h3>default buttons</h3>
+    <div style="text-align: center;">
+        <button>default</button>
+        <button class="orange">orange</button>
+        <button class="green">green</button>
+        <button class="deep_purple">deep_purple</button>
+        <button class="pink">pink</button>
+        <button class="blue_grey">blue_grey</button>
+    </div>
+    <h3>large buttons</h3>
+    <div style="text-align: center;">
+        <button class="large">default</button>
+        <button class="large orange">orange</button>
+        <button class="large green">green</button>
+        <button class="large deep_purple">deep_purple</button>
+        <button class="large pink">pink</button>
+        <button class="large blue_grey">blue_grey</button>
+    </div>
+
+
 <!-- ./<div id="main"> -->
 </div>
 
