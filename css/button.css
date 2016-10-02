@@ -1,0 +1,148 @@
+﻿/*
+    
+======================================================================
+Project Name    : mateb
+File Name       : button.css
+Encoding        : UTF-8
+Creation Date   : 2016-10-02
+ 
+Copyright (c) 2016 Naoki Horie.
+ 
+This software is released under the MIT License.
+http://opensource.org/licenses/mit-license.php
+======================================================================
+    
+    */
+
+@charset "utf-8";
+
+/*-------------------------------*/
+/*         default button         */
+/*-------------------------------*/
+
+button{
+    /* 背景色設定 */
+    background: #2196F3;
+    /* 縦方向に10px、
+    * 横方向に30pxの余白を指定 */
+    padding: 10px 30px;
+    /* 枠線消し */
+    border-style: none;
+
+    font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","Osaka","ＭＳＰゴシック","MS PGothic","sans-serif";
+    color: #FFF;
+    font-size: large;
+    text-decoration: none;
+
+    /* 角丸の指定 */
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+
+    position: relative;
+    margin: 2px;
+    min-width: 150px;
+}
+
+button:hover{
+    transition: all 30ms;
+    background-color: #42A5F5;
+    box-shadow: 0 3px 0 #1976D2;
+
+    bottom: 2px
+}
+
+button:active{
+    background-color: #1E88E5;
+    box-shadow: 0 -3px 0 #1976D2;
+
+    bottom: -2px;
+}
+
+button.large{
+    font-size: xx-large;
+    min-width: 200px;
+}
+
+/*
+    以下，各色ごとのオーバーライド
+*/
+/*-------------------------------*/
+/*          .orange
+/*-------------------------------*/
+button.orange{
+    background-color: #FF9800;
+}
+
+button.orange:hover{
+    background-color: #FFA726;
+    box-shadow: 0 3px 0 #F57C00;
+}
+
+button.orange:active{
+    background-color: #FB8C00;
+    box-shadow: 0 -3px 0 #F57C00;
+}
+
+
+/*-------------------------------*/
+/*          .green
+/*-------------------------------*/
+button.green{
+    background-color: #4CAF50;
+}
+button.green:hover{
+    background-color: #66BB6A;
+    box-shadow: 0 3px 0 #388E3C;
+}
+
+button.green:active{
+    background-color: #43A047;
+    box-shadow: 0 -3px 0 #388E3C;
+}
+
+/*-------------------------------*/
+/*          .deep_purple
+/*-------------------------------*/
+button.deep_purple{
+    background-color: #673AB7;
+}
+button.deep_purple:hover{
+    background-color: #7E57C2;
+    box-shadow: 0 3px 0 #512DA8;
+}
+
+button.deep_purple:active{
+    background-color: #8E24AA;
+    box-shadow: 0 -3px 0 #512DA8;
+}
+
+/*-------------------------------*/
+/*          .pink
+/*-------------------------------*/
+button.pink{
+    background-color: #E91E63;
+}
+button.pink:hover{
+    background-color: #EC407A;
+    box-shadow: 0 3px 0 #C2185B;
+}
+button.pink:active{
+    background-color: #D81B60;
+    box-shadow: 0 -3px 0 #C2185B;
+}
+
+/*-------------------------------*/
+/*          .blue_grey
+/*-------------------------------*/
+button.blue_grey{
+    background-color: #607D8B;
+}
+button.blue_grey:hover {
+    background-color: #78909C;
+    box-shadow: 0 3px 0 #455A64;
+}
+button.blue_grey:active{
+    background-color: #546E7A;
+    box-shadow: 0 -3px 0 #455A64;
+}
